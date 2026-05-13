@@ -303,7 +303,6 @@ Store_Atom_loop:
     sd a0, 16(a3)                     # HEAD->TEXT = STRING
     jal copy_string                   # Copy the string
 
-    mv a0, a3                         # Return HEAD
     ld ra, 0(sp)                      # restore ra
     ld a1, 8(sp)                      # restore a1
     ld a2, 16(sp)                     # restore a2
